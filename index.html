@@ -1,91 +1,221 @@
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Alex Dixon is a London-based writer and director of films, originally from Newcastle. Available for writing and directing commissions.">
-  <title>Alex Dixon | Writer &amp; Director</title>
+
+  <meta name="description" content="Alex Dixon, London-based film writer and director. Available for writing and directing work.">
+
+  <title>Alex Dixon | Writer & Director</title>
+
   <style>
-    * { box-sizing: border-box; }
-    html { -webkit-text-size-adjust: 100%; }
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+    }
+
     body {
       margin: 0;
-      background: #fff;
-      color: #161616;
+      background: #f2f2f2;
+      color: #111;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 17px;
+      font-size: 16px;
       line-height: 1.5;
       text-align: center;
     }
+
     main {
-      width: min(100% - 36px, 650px);
+      width: 100%;
+      max-width: 760px;
       margin: 0 auto;
-      padding: 45px 0 65px;
+      padding: 40px 20px 60px;
+      text-align: center;
     }
-    .portrait {
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .photo {
       display: block;
-      width: 150px;
+      width: 190px;
       max-width: 100%;
       height: auto;
-      margin: 0 auto 18px;
+      margin: 0 auto 20px;
     }
-    .portrait[hidden] { display: none; }
+
     h1 {
-      font-size: clamp(30px, 6vw, 43px);
+      width: 100%;
+      font-size: clamp(44px, 7vw, 56px);
       font-weight: normal;
       line-height: 1.15;
-      margin: 0 0 5px;
+      margin: 0 0 8px;
+      text-align: center;
     }
+
     .subtitle {
-      font-size: 15px;
-      letter-spacing: .06em;
-      margin: 0 0 21px;
+      display: block;
+      width: 100%;
+      font-size: 18px;
+      line-height: 1.4;
+      margin: 0 auto;
+      text-align: center;
     }
+
+    section {
+      width: 100%;
+      margin: 34px auto 0;
+      text-align: center;
+    }
+
     h2 {
-      font-size: 23px;
+      font-size: 32px;
       font-weight: normal;
-      margin: 28px 0 9px;
+      line-height: 1.2;
+      margin: 0 0 14px;
+      text-align: center;
     }
-    p { margin: 0 auto 11px; max-width: 580px; }
-    .film-title { font-style: italic; }
+
+    p {
+      width: 100%;
+      max-width: 680px;
+      margin: 0 auto 18px;
+      text-align: center;
+    }
+
+    .film-title {
+      font-size: 20px;
+      font-style: italic;
+      margin-bottom: 14px;
+    }
+
     a {
-      color: inherit;
+      color: #111;
       text-decoration: none;
       overflow-wrap: anywhere;
     }
-    a:hover { color: #666; }
-    a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+
+    a:hover {
+      color: #555;
+    }
+
+    a:focus-visible {
+      outline: 2px solid #111;
+      outline-offset: 3px;
+    }
+
+    .contact-links {
+      text-align: center;
+    }
+
+    .contact-links a {
+      display: block;
+      margin: 8px auto;
+    }
+
     @media (max-width: 600px) {
-      body { font-size: 16px; }
-      main { padding: 28px 0 45px; }
-      .portrait { width: 125px; }
-      h2 { font-size: 22px; margin-top: 24px; }
+      body {
+        font-size: 15px;
+      }
+
+      main {
+        padding: 28px 16px 44px;
+      }
+
+      .photo {
+        width: 160px;
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+
+      .subtitle {
+        font-size: 17px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      p {
+        margin-bottom: 16px;
+      }
     }
   </style>
 </head>
+
 <body>
-  <main>
-    <!-- Add Alex's photograph as portrait.jpg next to this file. -->
-    <img class="portrait" src="portrait.jpeg" alt="Alex Dixon" onerror="this.hidden=true">
+<main>
+
+  <header>
+    <img
+      class="photo"
+      src="portrait.jpeg"
+      alt="Alex Dixon"
+    >
 
     <h1>Alex Dixon</h1>
-    <p class="subtitle">Writer &amp; Director</p>
+
+    <p class="subtitle">
+      Writer &amp; Director
+    </p>
+  </header>
+
+  <p>
+    Hi, I'm Alex. I'm a London-based film writer
+    and director, originally from Newcastle.
+    I graduated from King's College London,
+    where I studied Film Studies, and enjoy
+    watching Newcastle United play football.
+  </p>
+
+  <p>
+    Available for writing and directing work.
+  </p>
+
+  <section>
+    <h2>Latest Film</h2>
+
+    <p class="film-title">
+      Kieth Turbo Meets the Onion Men
+    </p>
 
     <p>
-      Hi, I'm Alex. I'm a London-based film writer and director,
-      originally from Newcastle. I study Film Studies at King's College London
-      and enjoy watching Newcastle United play football.
+      Currently in post-production.
     </p>
-    <p>Available for writing and directing work.</p>
 
-    <h2>Latest Film</h2>
-    <p class="film-title">Kieth Turbo Meets the Onion Men</p>
-    <p>Currently in post-production.</p>
-    <p>Interested in attending a future screening? Email Alex to RSVP your interest.</p>
+    <p>
+      To RSVP for the premiere of
+      <em>Kieth Turbo Meets the Onion Men</em>,
+      please email
+      <a href="mailto:alex@alexdion.uk">
+        alex@alexdion.uk
+      </a>.
+    </p>
+  </section>
 
+  <section>
     <h2>Contact</h2>
-    <p>For work enquiries and screening interest:</p>
-    <p><a href="mailto:alex@alexdion.uk">alex@alexdion.uk</a></p>
-  </main>
+
+    <div class="contact-links">
+      <a href="mailto:alex@alexdion.uk">
+        alex@alexdion.uk
+      </a>
+    </div>
+  </section>
+
+</main>
 </body>
 </html>
