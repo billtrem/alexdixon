@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Alex Dixon, London-based film writer and director. Available for writing and directing work.">
+  <meta name="description"
+    content="Alex Dixon, London-based writer and director. Films, collaborations and independent projects.">
 
-  <title>Alex Dixon | Writer &amp; Director</title>
+  <title>ALEX DIXON / WRITER & DIRECTOR</title>
 
   <style>
     * {
@@ -20,19 +21,19 @@
 
     body {
       margin: 0;
-      background: #f2f2f2;
+      background: #f7f7f7;
       color: #111;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 16px;
-      line-height: 1.5;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 15px;
+      line-height: 1.6;
       text-align: center;
     }
 
     main {
       width: 100%;
-      max-width: 760px;
+      max-width: 720px;
       margin: 0 auto;
-      padding: 40px 20px 60px;
+      padding: 35px 20px 65px;
       text-align: center;
     }
 
@@ -43,31 +44,36 @@
       justify-content: center;
       width: 100%;
       text-align: center;
-      margin-bottom: 28px;
+      margin-bottom: 25px;
     }
 
     .photo {
       display: block;
-      width: 190px;
+      width: 180px;
       max-width: 100%;
       height: auto;
       margin: 0 auto 20px;
+      filter: grayscale(100%);
     }
 
     h1 {
       width: 100%;
-      font-size: clamp(44px, 7vw, 56px);
-      font-weight: normal;
-      line-height: 1.15;
-      margin: 0 0 8px;
+      font-family: "Courier New", Courier, monospace;
+      font-size: clamp(32px, 7vw, 46px);
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: -2px;
+      line-height: 1.1;
+      margin: 0 auto 8px;
       text-align: center;
     }
 
     .subtitle {
       display: block;
       width: 100%;
-      font-size: 18px;
-      line-height: 1.4;
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
       margin: 0 auto;
       text-align: center;
     }
@@ -79,78 +85,112 @@
     }
 
     h2 {
-      font-size: 32px;
-      font-weight: normal;
-      line-height: 1.2;
-      margin: 0 0 14px;
+      font-size: 19px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 0 auto 14px;
       text-align: center;
     }
 
     p {
       width: 100%;
-      max-width: 680px;
-      margin: 0 auto 18px;
+      max-width: 650px;
+      margin: 0 auto 14px;
       text-align: center;
     }
 
     .film-title {
-      font-size: 20px;
-      font-style: italic;
-      margin-bottom: 14px;
+      font-size: 17px;
+      font-weight: bold;
+      margin-bottom: 7px;
+    }
+
+    .work {
+      margin: 18px auto;
+      text-align: center;
+    }
+
+    .work-title {
+      font-weight: bold;
+      margin-bottom: 2px;
+    }
+
+    .work a {
+      display: inline-block;
+      font-size: 13px;
     }
 
     a {
       color: #111;
       text-decoration: none;
       overflow-wrap: anywhere;
+      word-break: break-word;
+      transition: color 0.15s ease;
     }
 
     a:hover {
-      color: #555;
+      color: #004cff;
     }
 
     a:focus-visible {
-      outline: 2px solid #111;
-      outline-offset: 3px;
+      outline: 2px solid #004cff;
+      outline-offset: 4px;
     }
 
-    .contact-links {
-      text-align: center;
+    .label {
+      color: #666;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
     }
 
-    .contact-links a {
-      display: block;
-      margin: 8px auto;
+    .contact {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 14px;
+    }
+
+    footer {
+      margin-top: 45px;
+      font-size: 12px;
+      letter-spacing: 1px;
+      color: #777;
     }
 
     @media (max-width: 600px) {
       body {
-        font-size: 15px;
+        font-size: 14px;
       }
 
       main {
-        padding: 28px 16px 44px;
+        padding: 25px 16px 45px;
       }
 
       .photo {
-        width: 160px;
-        margin-bottom: 18px;
+        width: 150px;
       }
 
       h1 {
-        font-size: 42px;
+        font-size: 34px;
+        letter-spacing: -1px;
       }
 
       .subtitle {
-        font-size: 17px;
+        font-size: 12px;
+        letter-spacing: 1px;
       }
 
       h2 {
-        font-size: 28px;
+        font-size: 17px;
       }
 
-      p {
-        margin-bottom: 16px;
+      section {
+        margin-top: 28px;
+      }
+
+      .work a {
+        font-size: 12px;
       }
     }
   </style>
@@ -160,17 +200,19 @@
 <main>
 
   <header>
+
     <img
       class="photo"
-      src="portrait.jpeg"
+      src="portrait.jpeg?v=2"
       alt="Alex Dixon"
     >
 
     <h1>Alex Dixon</h1>
 
     <p class="subtitle">
-      Writer &amp; Director
+      Writer / Director
     </p>
+
   </header>
 
   <p>
@@ -185,24 +227,94 @@
     Available for writing and directing work.
   </p>
 
-  <section>
+  <section id="latest-film">
+
     <h2>Latest Film</h2>
 
     <p class="film-title">
       Kieth Turbo Meets the Onion Men
     </p>
 
-    <p>
-      Currently in post-production.
+    <p class="label">
+      CURRENTLY IN POST-PRODUCTION
     </p>
 
     <p>
-      Email Alex to RSVP for the future premiere of
-      <em>Kieth Turbo Meets the Onion Men</em>.
+      Email Alex to RSVP for the future premiere
+      of <em>Kieth Turbo Meets the Onion Men</em>.
     </p>
+
   </section>
 
-  <section>
+  <section id="selected-work">
+
+    <h2>Selected Work</h2>
+
+    <p>
+      A series of experimental film and video projects
+      made in collaboration with Olivia.
+    </p>
+
+    <p class="label">
+      MANGUS SNAVE
+    </p>
+
+    <div class="work">
+      <p class="work-title">
+        Don't Fuck That Pig in My Barn
+      </p>
+
+      <a
+        href="https://www.youtube.com/watch?v=XwSWhzC-Mg0"
+        target="_blank"
+        rel="noopener noreferrer">
+        https://www.youtube.com/watch?v=XwSWhzC-Mg0
+      </a>
+    </div>
+
+    <div class="work">
+      <p class="work-title">
+        Add Cheese to Anything
+      </p>
+
+      <a
+        href="https://www.youtube.com/watch?v=mxWrznonQc8"
+        target="_blank"
+        rel="noopener noreferrer">
+        https://www.youtube.com/watch?v=mxWrznonQc8
+      </a>
+    </div>
+
+    <div class="work">
+      <p class="work-title">
+        Boogie Extraction Device
+      </p>
+
+      <a
+        href="https://www.youtube.com/watch?v=xu_xFra9ilE"
+        target="_blank"
+        rel="noopener noreferrer">
+        https://www.youtube.com/watch?v=xu_xFra9ilE
+      </a>
+    </div>
+
+    <p class="label">
+      MORE VIDEOS
+    </p>
+
+    <p>
+      <a
+        href="https://www.youtube.com/@mangussnave9696/videos"
+        target="_blank"
+        rel="noopener noreferrer">
+        https://www.youtube.com/@mangussnave9696/videos
+      </a>
+    </p>
+
+  </section>
+
+  <section id="contact">
+
     <h2>Contact</h2>
 
     <p>
@@ -211,11 +323,12 @@
       together on another film project, please email:
     </p>
 
-    <div class="contact-links">
+    <p class="contact">
       <a href="mailto:alex@alexdixon.uk">
         alex@alexdixon.uk
       </a>
-    </div>
+    </p>
+
   </section>
 
 </main>
